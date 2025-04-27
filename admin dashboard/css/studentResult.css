@@ -1,0 +1,185 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.university-name {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    background-color: orangered;
+    padding: 20px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+/* .header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d63400;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Highlight "Absent" Rows */
+td.absent {
+    color: red;
+    font-weight: bold;
+}
+
+/* Total and Percentage Rows */
+.total-row {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Watermark for Absent Students */
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(255, 0, 0, 0.2);
+    font-weight: bold;
+    z-index: 999;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .watermark {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select, button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .watermark {
+        font-size: 2.5rem;
+    }
+}

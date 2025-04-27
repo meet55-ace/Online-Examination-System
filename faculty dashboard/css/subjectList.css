@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌟 Body & Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* 🌟 Main Content */
+.main-content {
+    width: 80%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 🌟 Heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Table Styles */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.subject-table th,
+.subject-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.subject-table th {
+    background-color: darkgray;
+    color: white;
+    text-transform: uppercase;
+}
+
+.subject-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.subject-table tr:hover {
+    background-color: #ddd;
+}
+
+/* 🌟 Back to Dashboard Link */
+.fw-bold {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.fw-bold a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.fw-bold a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+General Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Layout */
+body {
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #343a40;
+    z-index: -1; /* Moves navbar behind everything */
+}
+
+
+.sidebar {
+    background-color: rgb(28, 27, 27) !important; /* Sidebar ka background gray */
+}
+
+.sidebar nav a,
+.sidebar nav .edit,
+.sidebar .header h1 {
+    color: #f4f1f1 !important; /* Dark Gray Color */
+}
+
+
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Prevents content from going behind sidebar */
+    margin-top: 70px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* When Sidebar is Closed */
+.sidebar.closed + .main-content {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}

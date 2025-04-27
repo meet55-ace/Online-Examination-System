@@ -1,0 +1,91 @@
+/* 🌟 Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🌟 Body & Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding-top: 40px; /* 🔼 Thoda upar margin diya */
+}
+
+/* 🌟 Main Content */
+.main-content {
+    width: 70%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 🌟 Heading */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px; /* 🔽 Thoda size chhota kiya */
+}
+
+/* 🌟 Subject Heading */
+.subject-heading {
+    margin-top: 15px;
+    padding: 8px;
+    background: #55c8ee;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px; /* 🔽 Thoda size chhota */
+    text-transform: uppercase;
+}
+
+/* 🌟 Student Table */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 14px; /* 🔽 Text size thoda chhota kiya */
+}
+
+.student-table th, .student-table td {
+    border: 1px solid #ddd;
+    padding: 8px; /* 🔽 Thoda padding kam ki */
+    text-align: left;
+}
+
+.student-table th {
+    background-color: rgb(200, 157, 192);
+    color: white;
+    text-transform: uppercase;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #ececec;
+}
+
+/* 🌟 Back to Dashboard Link */
+.fw-bold {
+    font-size: 16px; /* 🔽 Chhota kiya */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.fw-bold a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.fw-bold a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
