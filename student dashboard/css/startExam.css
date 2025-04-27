@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(to right, #f7f9fc, #e3f2fd);
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.time_circles {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ffeeee;
+    margin-top: 10px;
+}
+
+.question-card {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h3 {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.question-card .question-marks {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.options label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+.submit-btn:disabled {
+    background: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    .question-card h3 {
+        font-size: 1rem;
+    }
+}
